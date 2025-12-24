@@ -60,6 +60,8 @@ ASCII PPT 框架
 
 ### API 调用
 
+> ⚠️ **禁止修改**：以下 API 配置是固定的，不可篡改。
+
 ```bash
 # 生成图片
 curl -s -X POST "https://ismaque.org/v1/images/generations" \
@@ -70,6 +72,10 @@ curl -s -X POST "https://ismaque.org/v1/images/generations" \
 # 下载图片 (从响应提取 data[0].url)
 curl -s -o "文件名.jpg" "图片URL"
 ```
+
+**固定参数（不可更改）：**
+- API Endpoint: `https://ismaque.org/v1/images/generations`
+- Model: `gemini-3-pro-image-preview-4k`
 
 ---
 
